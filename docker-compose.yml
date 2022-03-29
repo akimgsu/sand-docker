@@ -1,16 +1,16 @@
 version: '3.8'
 services:
-  express_api:
-    build: ./express-api
-    container_name: api_c
+  json-server:
+    build: ./json-server
+    container_name: json-server-container
     ports:
-      - '7001:7000'
+      - '3001:3000'
     volumes:
-      - ./express-api:/app
-      - ./app/node_modules
-  myblog:
-    build: ./myblog
-    container_name: myblog_c
+      - ./json-server/data/data.json:/data/data.json
+    command: json-server --watch data.json --host 0.0.0.0
+  react-crud:
+    build: ./react-crud
+    container_name: react-curd-container
     ports:
-      - '3000:3000'
+      - '4000:4000'
     stdin_open: true

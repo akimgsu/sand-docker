@@ -1,0 +1,71 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "category": 1,
+        "category_name": "Garden"
+      },
+      {
+        "id": 2,
+        "category": 2,
+        "category_name": "Tool"
+      },
+      {
+        "id": 3,
+        "category": 3,
+        "category_name": "Rent"
+      }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "category": 1,
+        "title": "Rose",
+        "price": "10",
+        "isStock": false
+      },
+      {
+        "id": 2,
+        "category": 1,
+        "title": "Jar",
+        "price": "20",
+        "isStock": false
+      },
+      {
+        "id": 3,
+        "category": 2,
+        "title": "drill",
+        "price": "100",
+        "isStock": true,
+        "isDone": false
+      },
+      {
+        "id": 4,
+        "category": 2,
+        "title": "Saw",
+        "price": "14",
+        "isStock": false
+      },
+      {
+        "category": "2",
+        "title": "Driver",
+        "price": "5",
+        "isStock": true,
+        "id": 5
+      },
+      {
+        "category": "3",
+        "title": "Truck 1",
+        "price": "50",
+        "isStock": false,
+        "id": 6
+      },
+      {
+        "category": "3",
+        "title": "Blower",
+        "price": "20",
+        "isStock": false,
+        "id": 7
+      }
+    ]
+  }
