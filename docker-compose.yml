@@ -1,5 +1,14 @@
 version: '3.8'
 services:
+  db:
+    image: mysql:5.7
+    container_name: local-db
+    volumes:
+      - ./db/mysql/data:/var/lib/mysql
+      - ./db/mysql/init:/docker-entrypoint-initdb.d
+    restart: always
+    environment:
+      - MYSQL_ROOT_
   json-server:
     build: ./json-server
     container_name: json-server-container

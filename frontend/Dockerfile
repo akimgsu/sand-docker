@@ -1,4 +1,4 @@
-FROM node:12.18.4
+FROM node:12
 
 # 이미지 생성 과정에서 실행할 명령어
 RUN npm install -g http-server 

@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:5.7
+    container_name: local-db
+    volumes:
+      - /db/mysql/data:/var/lib/mysql
+      - /db/mysql/init:/docker-entrypoint-initdb.d
+    restart: always
+    ports:
+      - 13306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      TZ: America\New_York
+    platform: linux/x86_64
+
+#docker run --name db -v ./db/mysql/data:/var/lib/mysql --restart=always -e MYSQL_ROOT_PASSWORD: root
